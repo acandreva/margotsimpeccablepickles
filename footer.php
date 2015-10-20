@@ -1,19 +1,13 @@
 <!--BEGINNING OF FOOTER AREA - END SECTION CONTENT-->
-        <footer class="row">
-            <div class="three columns">
-                <?php dynamic_sidebar('footer-widget-one'); ?>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <p>&copy; 2015 Margot's Impeccable Pickles</p>
+                </div>
             </div>
-            <div class="three columns">
-                <?php dynamic_sidebar('footer-widget-two'); ?>
-            </div>
-            <div class="three columns">
-                <?php dynamic_sidebar('footer-widget-three'); ?>
-            </div>
-            <div class="three columns">
-                <?php dynamic_sidebar('footer-widget-four'); ?>
-            </div>
-        </footer>
-    </div><!--end container div-->
+        </div>
+    </footer>
 <?php wp_footer(); ?>
 </body>
 </html>
