@@ -1,11 +1,11 @@
 /*
-Theme Name: Allison Blank Theme
-Theme URI: URL for Allison Blank
-Author: Allison Logan
-Description: Blank theme for WIE course
+Theme Name: Margot's Theme
+Theme URI: URL for Margot's theme
+Author: Allison Logan, Heather Laude and Emily Allen
+Description: Theme for Margot's Impeccable Pickles
 Version: 1.0
 License: Open
-Text Domain: allison_logan_blank_template
+Text Domain: margotstheme
 */
 
 @import url("css/skeleton.css");
@@ -26,39 +26,55 @@ h4 {font-size: 2.1rem;}
 h5 {font-size: 1.6rem;}
 h6 {font-size: 1.1rem;}
 
-/*--- Menu --- */
-
-.blank-menu-header {
-    text-align: left;
-    margin-top: 40px;
-    margin-bottom: 40px;
+::selection {
+    color: #fff; 
+    background: #167f3c;
 }
 
-.blank-menu-header ul {
+/*Wordpress Image Alignment*/
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {margin: 1.5em auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {margin: 1.5em auto}
+
+/*--- Menu --- */
+
+.main_menu_lft {
+    text-align: right;
+    margin-top: 70px;
+}
+
+.nav_logo {
+    margin-top: 5px;
+}
+
+.main_menu_rt {
+    text-align: left;
+    margin-top: 70px;
+}
+
+.main_menu_lft ul, .main_menu_rt ul {
     margin: 0; 
     padding: 0; 
     list-style-type: none; 
     list-style-image: none; 
 }
 
-.blank-menu-header li {
+.main_menu_lft li, .main_menu_rt li {
     display: inline;
 }
 
-.blank-menu-header ul li a {
+.main_menu_lft ul li a, .main_menu_rt ul li a {
     text-decoration: none;  
     margin: 4px;
-    padding: 5px 0px 5px 40px; 
+    padding: 5px 0px; 
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    color: #06273e;
 }
 
-.blank-menu-header ul li a:hover {
-    color: #cccccc;
-}
-
-/*--Front Page--*/
-.post-thumbnail-container {
-    padding: 2px;
-    margin: 0 10px 10px 0;
+.main_menu_lft ul li a:hover, .main_menu_rt ul li a:hover {
+    color: #649AA6;
 }

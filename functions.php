@@ -45,8 +45,18 @@ function blank_widgets_init() {
     }
 add_action('widgets_init', 'blank_widgets_init');
 
-/*-------------- Enable Menu--------------- */
-add_theme_support('menus');
+/*-------------- Enable Menu---------------
+add_theme_support('menus');*/
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'main-menu1' => __( 'Main Menu Left' ),
+      'main-menu2' => __( 'Main Menu Right' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
 
 /*-------------- Enable Post Thumbnails--------------- */
 add_theme_support('post-thumbnails');

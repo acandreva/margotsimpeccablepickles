@@ -11,10 +11,19 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="twelve columns">
-                    <?php wp_nav_menu(array(
-                        'sort_column' => 'menu_order',
-                        'container_class' => 'menu-header'
+                <div class="four columns">
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'main-menu1',
+                        'container_class' => 'main_menu_lft'
+                    )); ?>
+                </div>
+                <div class="four columns nav_logo">
+                    <img src="http://margots.heatherlaude.com/wp-content/themes/margotstheme/images/margotslogo.png">
+                </div>
+                <div class="four columns">
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'main-menu2',
+                        'container_class' => 'main_menu_rt'
                     )); ?>
                 </div>
             </div>
