@@ -11,6 +11,18 @@ Text Domain: margotstheme
 @import url("css/skeleton.css");
 @import url("css/normalize.css");
 
+@font-face{
+    font-family: 'sinkinsansregular';
+    src: url('fonts/sinkinsansregular.eot');
+    src:url('fonts/sinkinsansregular.ttf') format('truetype'), url('fonts/sinkinsansregular.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'sinkinsansbold';
+    src: url('fonts/sinkinsansbold.eot');
+    src:url('fonts/sinkinsansbold.ttf') format('truetype'), url('fonts/sinkinsansbold.woff') format('woff');
+}
+
 * {
     color: #000000;
     font-size: 14px;
