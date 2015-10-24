@@ -7,6 +7,7 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="twelve columns">
+                <h1>Recipes</h1>
             <!-- BEGIN LOOP -->
                 <?php 
                 if ( have_posts() ) :
