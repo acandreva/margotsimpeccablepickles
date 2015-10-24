@@ -31,6 +31,10 @@ Text Domain: margotstheme
 
 .clear {clear: both;}
 
+body {
+    font-family: sinkinsansregular, Calibri, Trebuchet MS, sans-serif;
+}
+
 h1 {
     font-family: museo-slab;
     font-weight: 800;
