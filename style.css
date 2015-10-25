@@ -40,6 +40,11 @@ a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {margin: 1.5em auto}
 
 /*--- Menu --- */
+.nav_bg_color {
+    background-color: #167f3c;
+    height: 30px;
+    margin-top: -73px;
+}
 
 .main_menu_lft {
     text-align: right;
@@ -47,7 +52,7 @@ a img.aligncenter {margin: 1.5em auto}
 }
 
 .nav_logo {
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 .main_menu_rt {
@@ -72,9 +77,46 @@ a img.aligncenter {margin: 1.5em auto}
     padding: 5px 0px; 
     font-weight: 300;
     font-size: 1.5rem;
-    color: #06273e;
+    color: #FFF;
 }
 
 .main_menu_lft ul li a:hover, .main_menu_rt ul li a:hover {
-    color: #649AA6;
+    text-decoration: underline;  
+}
+
+/*--- Home Page --- */
+.home_photo {
+    text-align: center;
+}
+
+.home_text {
+    background-image: url("images/hometextbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 960px;
+}
+
+.home_text p {
+    color: #fff;
+}
+
+.home_images{
+    text-align: center;
+}
+
+.coverlogo {
+    margin: 10% 0;
+}
+
+/*--- Footer --- */
+footer {
+    text-align: center;
+    background-color: #a9aaac;
+    padding: 15px 0;
+}
+
+footer p {
+    color: #fff;
+    margin-bottom: 0;
 }

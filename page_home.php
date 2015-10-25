@@ -1,5 +1,9 @@
-<?php get_header(); ?>
-    <div class="home-photo">
+<?php
+
+/*Template Name: Home Page*/
+
+get_header(); ?>
+    <div class="home_photo">
         <img src="http://margots.heatherlaude.com/wp-content/themes/margotstheme/images/coverlogo.png" class="coverlogo">
     </div>
     <div class="container">
