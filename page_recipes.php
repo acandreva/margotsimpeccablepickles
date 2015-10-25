@@ -4,14 +4,14 @@
 
 get_header(); ?>
 <?php query_posts('post_type=post&post_status=publish&posts_per_page=5&paged='. get_query_var('paged')); ?>
-    <div class="container">
+    <div class="container recipecontent">
         <div class="row">
             <div class="twelve columns">
             <!-- BEGIN LOOP -->
                 <?php 
                 if ( have_posts() ) :
                 while ( have_posts() ) : the_post(); ?>
-                <div class="blog-posts">
+                <div class="recipe-posts">
                     <h4><?php the_category(', ') ?></h4>
                     <h3>
                         <a href="<?php the_permalink(); ?>">
