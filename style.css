@@ -11,6 +11,18 @@ Text Domain: margotstheme
 @import url("css/skeleton.css");
 @import url("css/normalize.css");
 
+@font-face{
+    font-family: 'sinkinsansregular';
+    src: url('fonts/sinkinsansregular.eot');
+    src:url('fonts/sinkinsansregular.ttf') format('truetype'), url('fonts/sinkinsansregular.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'sinkinsansbold';
+    src: url('fonts/sinkinsansbold.eot');
+    src:url('fonts/sinkinsansbold.ttf') format('truetype'), url('fonts/sinkinsansbold.woff') format('woff');
+}
+
 * {
     color: #000000;
     font-size: 14px;
@@ -19,12 +31,66 @@ Text Domain: margotstheme
 
 .clear {clear: both;}
 
-h1 {font-size: 3.0rem;}
-h2 {font-size: 2.6rem;}
-h3 {font-size: 2.3rem;}
-h4 {font-size: 2.1rem;}
-h5 {font-size: 1.6rem;}
-h6 {font-size: 1.1rem;}
+body {
+    font-family: sinkinsansregular, Calibri, Trebuchet MS, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0 3% 0 3%;
+    margin-bottom: .1em;
+}
+
+h1 {
+    font-family: museo-slab;
+    font-weight: 800;
+    font-size: 3.0rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+h4 {
+    font-size: 2.1rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
+
+h6 {
+    font-size: 1.1rem;
+}
+
+/*Recipe Heading Styles*/
+.recipecontent h4, .recipecontent h4 a, .recipecontent h4 a:hover {
+    color: #167f3c;
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 0px;
+}
+
+.recipecontent h3, .recipecontent h3 a, .recipecontent h3 a:hover {
+    font-family: museo-slab;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    font-size: 2.5rem;
+    line-height: 32px;
+    padding: 0px;
+}
+
+.recipecontent h3 a:hover {
+    text-decoration: underline;
+}
+
+p {
+    padding: 0 3% 0 3%;
+}
 
 ::selection {
     color: #fff; 
@@ -39,7 +105,15 @@ a img.alignright {float:right; margin:0 0 1em 1em}
 a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {margin: 1.5em auto}
 
+
 /*--- Menu --- */
+.desktop-nav {display: none;}
+
+.nav_bg_color {
+    background-color: #167f3c;
+    height: 30px;
+    margin-top: -73px;
+}
 
 .main_menu_lft {
     text-align: right;
@@ -47,7 +121,7 @@ a img.aligncenter {margin: 1.5em auto}
 }
 
 .nav_logo {
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 .main_menu_rt {
@@ -72,9 +146,101 @@ a img.aligncenter {margin: 1.5em auto}
     padding: 5px 0px; 
     font-weight: 300;
     font-size: 1.5rem;
-    color: #06273e;
+    color: #FFF;
 }
 
 .main_menu_lft ul li a:hover, .main_menu_rt ul li a:hover {
-    color: #649AA6;
+    text-decoration: underline;  
+}
+
+/*--- Home Page --- */
+.home_photo {
+    text-align: center;
+}
+
+.home_text {
+    background-image: url("images/hometextbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 960px;
+}
+
+.home_text p {
+    color: #fff;
+}
+
+.home_images{
+    text-align: center;
+}
+
+.covertext {
+    margin: 10% 0;
+    width: 70%;
+    max-width: 500px;
+}
+
+/*---Recipes Page*/
+.recipecontent {
+    width: 45%;
+    margin: auto;
+}
+
+.recipe-posts {
+    margin: 10% 0 0;
+    border-bottom: solid #000 1px;
+}
+
+.metainfo {
+    padding: 6.5px 0;
+    color: #757575;
+    font-style: oblique;
+    float: left;
+}
+
+.metainfo a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.metainfo a:hover {
+    color: #6e9329;
+    text-decoration: underline;
+}
+
+.meta-glyph {
+    margin: 0 5px;
+}
+
+.social-shortcode {
+    display: inline;
+}
+
+.recipe-posts ul {
+    list-style-type: none; 
+    list-style-image: none; 
+}
+
+.next_prev {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*--- Footer --- */
+footer {
+    text-align: center;
+    background-color: #a9aaac;
+    padding: 15px 0;
+}
+
+footer p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/*~~~~~~NEW MEDIA QUERY~~~~~~~*/
+@media screen and (min-width: 416px) {
+.desktop-nav {display: block;}
+.mobile-nav {display: none;}
+
 }

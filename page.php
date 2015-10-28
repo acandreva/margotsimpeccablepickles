@@ -1,7 +1,8 @@
 <?php get_header(); ?>
+<div class="container">
     <div class="row">
 <!-- BEGIN PAGE PHP -->
-        <div class="nine columns">
+        <div class="twelve columns">
             <?php if (have_posts()) : 
                 /* OUR DATA CONTEXT IS DEFINED  */
                 while (have_posts()) : the_post(); ?> 
@@ -11,10 +12,6 @@
             endif; ?>
         </div>
 <!-- END PAGE PHP -->
-<!-- BEGIN SIDEBAR AREA -->
-        <div class="three columns">
-            <?php get_sidebar(); ?>
-        </div>
-<!-- END SIDEBAR AREA -->
     </div>
+</div>
 <?php get_footer(); ?>
