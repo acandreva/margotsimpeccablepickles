@@ -13,6 +13,7 @@
 
 </head>
 <body>
+    <article class="main-photo">
 <!--Mobile Nav-->
         <div class="shy-menu mobile-nav">
             <a class="shy-menu-hamburger">

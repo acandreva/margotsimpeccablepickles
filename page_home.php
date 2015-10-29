@@ -10,6 +10,12 @@ get_header(); ?>
             <div class="home_photo">
                 <img src="http://margots.heatherlaude.com/wp-content/themes/margotstheme/images/covertext.png" class="covertext">
             </div>
+            <div class="outer-shop-now">
+                <div class="inner-shop-now">
+                <h1>SHOP NOW</h1>
+                </div>     
+            </div>
+            </article>
             <!-- BEGIN LOOP -->
                 <?php if (have_posts()) : 
                     /* OUR DATA CONTEXT IS DEFINED  */

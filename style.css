@@ -111,22 +111,28 @@ a img.aligncenter {margin: 1.5em auto}
 
 .nav_bg_color {
     background-color: #167f3c;
-    height: 30px;
-    margin-top: -73px;
+    height: 50px;
+    margin-top: -81px;
 }
 
 .main_menu_lft {
     text-align: right;
-    margin-top: 70px;
+    margin-top: 75px;
 }
 
 .nav_logo {
     margin-top: 25px;
 }
 
+.nav-logo img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .main_menu_rt {
     text-align: left;
-    margin-top: 70px;
+    margin-top: 75px;
 }
 
 .main_menu_lft ul, .main_menu_rt ul {
@@ -158,26 +164,74 @@ a img.aligncenter {margin: 1.5em auto}
     text-align: center;
 }
 
+.outer-shop-now {
+    width: 160px;
+    height: 40px;
+    background-color: #167F3C;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+.inner-shop-now {
+    border: 1px dashed white;
+    margin: 0 auto;
+    width: 145px;
+    height: 35px;
+}
+
+.inner-shop-now h1 {
+    font-family: "sinkinsansregular";
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+h1.main-headings {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
 .home_text {
     background-image: url("images/hometextbg.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     max-width: 960px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home_text p {
     color: #fff;
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-right: 90px;
+    margin: auto;
 }
 
-.home_images{
-    text-align: center;
+.home_images img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .covertext {
     margin: 10% 0;
     width: 70%;
     max-width: 500px;
+}
+
+.text-slideshow article {
+    font-family: "sinkinsansregular";
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /*---Recipes Page*/

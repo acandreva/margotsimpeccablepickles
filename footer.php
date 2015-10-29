@@ -9,5 +9,7 @@
         </div>
     </footer>
 <?php wp_footer(); ?>
+<script src="/js/jquery.backstretch.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
