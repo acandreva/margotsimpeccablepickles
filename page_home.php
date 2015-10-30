@@ -24,6 +24,11 @@ get_header(); ?>
                     endwhile;
                 endif; ?>
             <!-- END LOOP -->
+            <div class="outer-sell-now">
+                <div class="inner-sell-now">
+                    <h1>SELL OUR PICKLES</h1>
+                </div>
+            </div>
             </div>
         </section>
     </div>

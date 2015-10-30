@@ -117,7 +117,7 @@ a img.aligncenter {margin: 1.5em auto}
 
 .main_menu_lft {
     text-align: right;
-    margin-top: 75px;
+    margin-top: 55px;
 }
 
 .nav_logo {
@@ -132,7 +132,7 @@ a img.aligncenter {margin: 1.5em auto}
 
 .main_menu_rt {
     text-align: left;
-    margin-top: 75px;
+    margin-top: 55px;
 }
 
 .main_menu_lft ul, .main_menu_rt ul {
@@ -166,12 +166,12 @@ a img.aligncenter {margin: 1.5em auto}
 
 .outer-shop-now {
     width: 160px;
-    height: 40px;
+    height: 45px;
     background-color: #167F3C;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    padding-top: 8px;
+    padding-top: 4px;
     padding-bottom: 6px;
 }
 
@@ -213,6 +213,15 @@ h1.main-headings {
     margin: auto;
 }
 
+.home_images {
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
 .home_images img {
     margin-left: auto;
     margin-right: auto;
@@ -224,16 +233,51 @@ h1.main-headings {
     max-width: 500px;
 }
 
-.text-slideshow article {
-    font-family: "sinkinsansregular";
-    font-size: 12px;
-    font-weight: 300;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+.slideshow_button span {
+    display: none;
 }
 
+.retail-partners {
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.retail-partners img {
+    float: left;
+    padding: 20px;
+}
+
+.outer-sell-now {
+    width: 195px;
+    height: 40px;
+    background-color: #167F3C;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+}
+
+.inner-sell-now {
+    border: 1px dashed white;
+    margin: 0 auto;
+    width: 180px;
+    height: 35px;
+}
+
+.inner-sell-now h1 {
+    font-family: "sinkinsansregular";
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
 /*---Recipes Page*/
 .recipecontent {
     width: 45%;
