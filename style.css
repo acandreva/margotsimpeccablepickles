@@ -221,6 +221,12 @@ a img.aligncenter {margin: 1.5em auto}
     color: #167F3C;
 }
 
+.stitched a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
 /*--- Home Page Green Box Styles ---*/
 .home_text {
     width: 90%;
