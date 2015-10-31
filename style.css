@@ -194,53 +194,31 @@ a img.aligncenter {margin: 1.5em auto}
 }
 
 /*---Home Page Buttons---*/
-.outer-shop-now {
-    height: 40px;
-    width: 220px;
-}
-
-.outer-shop-now, .outer-sell-now {
-    box-sizing: border-box;
-    padding: 10px;
-    display: table;
-    background: #167F3C;
-    font-size: 16px;
-    color: white;
+.stitched {
+   padding: 10px;
+   margin: 10px;
+   background: #167F3C;
+   color: #fff;
+   font-size: 16px;
+   font-family: sinkinsansbold;
+   line-height: 1.0 em;
+   border: 2px dashed #fff;
+   box-shadow: 0 0 0 4px #167F3C, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   font-weight: normal;
+    width: 150px;
     margin: auto;
+    text-align: center;
 }
 
-.outer-shop-now:hover, .outer-sell-now:hover {
+.stitched:hover {
     background: #FFF;
-}
-
-.inner-shop-now, .inner-sell-now {
-    height: 75%;
-    width: 95%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align:center;
-    margin: auto;
-    border: 2px dashed #FFF;
-}
-
-.inner-shop-now:hover, .inner-sell-now:hover {
-    border: 2px dashed #167F3C;
-}
-
-.inner-shop-now a, .inner-sell-now a  {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-
-.inner-shop-now a:hover, .inner-sell-now a:hover {
     color: #167F3C;
+    border-color: #167F3C;
+    box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
 }
 
-.outer-sell-now {
-    padding: 10px;
-    height: 40px;
-    width: 355px;
+.stitched p:hover {
+    color: #167F3C;
 }
 
 /*--- Home Page Green Box Styles ---*/

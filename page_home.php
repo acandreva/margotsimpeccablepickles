@@ -6,10 +6,8 @@ get_header(); ?>
 	<article class="home_photo">
         <img src="http://margots.heatherlaude.com/wp-content/themes/margotstheme/images/covertext.png" class="covertext" />
     </article>
-    <div class="outer-shop-now">
-        <div class="inner-shop-now">
-            <h1>Shop Now</h1>
-        </div>     
+    <div class="stitched">
+        <a href="#"><p>Shop Now</p></a>
     </div>
     <div class="container home_content">
         <section class="row">
@@ -23,10 +21,8 @@ get_header(); ?>
                 endif; ?>
             <!-- END LOOP -->
             </div>
-            <div class="outer-sell-now">
-                <div class="inner-sell-now">
-                    <h1>Sell Our Pickles</h1>
-                </div>
+            <div class="stitched">
+                <a href="#"><p>Sell Our Pickles</p></a>
             </div>
         </section>
     </div>
