@@ -10,7 +10,7 @@ Text Domain: margotstheme
 
 @import url("css/skeleton.css");
 @import url("css/normalize.css");
-@import url("css/shymenu.css");
+@import url("css/jquery.fatNav.css");
 
 @font-face{
     font-family: 'sinkinsansregular';
@@ -31,7 +31,7 @@ Text Domain: margotstheme
 
 .clear {clear: both;}
 
-.hide {display: none;}
+.hide, #sticky-social-wrap {display: none;}
 
 body {
     font-family: sinkinsansregular, Calibri, Trebuchet MS, sans-serif;
@@ -118,7 +118,7 @@ a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {margin: 1.5em auto}
 
 .page_content, .about_content {
-    padding-top: 15%;
+    padding-top: 35%;
 }
 
 /*--- Menu --- */
@@ -138,6 +138,17 @@ a img.aligncenter {margin: 1.5em auto}
 .nav_logo {
     margin-left: 0;
     text-align: right;
+}
+
+.mobile_logo {
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+}
+
+.mobile_logo img {
+    width: 50%;
 }
 
 .menu_rt {
@@ -178,7 +189,7 @@ a img.aligncenter {margin: 1.5em auto}
 .home_photo {
     text-align: center;
     width: 100%;
-    padding: 13% 0 5%;
+    padding: 40% 0 15%;
 }
 
 .home_images {
@@ -336,14 +347,25 @@ footer p {
 }
 
 /*~~~~~~NEW MEDIA QUERY~~~~~~~*/
-@media screen and (min-width: 416px) {
-.desktop-nav {
-        display: block;
-        position: fixed;
-        z-index: 100;
-        width: 100%;
-}
+@media screen and (min-width: 415px) {
+    .desktop-nav {
+            display: block;
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+    }
 
-.mobile-nav {display: none;}
+    .mobile-nav, .hamburger, .hamburger__icon, .hamburger__icon:before, .hamburger__icon:after {display: none;}
+
+    #sticky-social-wrap {display: block;}
+
+    .page_content, .about_content {
+        padding-top: 15%;
+    }
+
+    /*--- Home Page ---*/
+    .home_photo {
+        padding: 13% 0 5%;
+    }
 
 }
