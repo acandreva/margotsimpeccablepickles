@@ -25,7 +25,6 @@ Text Domain: margotstheme
 }
 
 * {
-    color: #000000;
     font-size: 14px;
     line-height: 16px;
 }
@@ -216,48 +215,48 @@ a img.aligncenter {margin: 1.5em auto}
 
 /*---Home Page Green Button Styles---*/
 .outer-shop-now {
-    width: 160px;
-    height: 45px;
-    background-color: #167F3C;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    padding-top: 4px;
-    padding-bottom: 6px;
+    width: 220px;
+    margin: auto;
 }
 
-.inner-shop-now {
-    border: 1px dashed white;
-    margin: 0 auto;
-    width: 145px;
-    height: 35px;
-}
-
-.inner-shop-now h3, .inner-sell-now h3 {
-    font-family: "sinkinsansregular";
-    color: white;
+.outer-shop-now, .outer-sell-now {
+    height: 65px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    background: #167F3C;
     font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
+    color: #fff;
 }
 
 .outer-sell-now {
-    width: 195px;
-    height: 40px;
-    background-color: #167F3C;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 25px;
-    padding-top: 6px;
-    padding-bottom: 4px;
+    width: 280px;
+    margin: 10% auto;
 }
 
-.inner-sell-now {
-    border: 1px dashed white;
-    margin: 0 auto;
-    width: 180px;
-    height: 35px;
+.outer-shop-now:hover, .outer-sell-now:hover {
+    background: #fff;
+}
+
+.inner-shop-now, .inner-sell-now {
+    height: 30%;
+    width: 90%;
+    margin: auto;
+    border: 2px dashed #fff;
+    padding: 10px 0 20px;
+}
+
+.inner-shop-now:hover, .inner-sell-now:hover {
+    border: 2px dashed #167F3C;
+}
+
+.inner-shop-now a, .inner-sell-now a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.inner-shop-now a:hover, .inner-sell-now a:hover {
+    color: #167F3C;
 }
 
 /*End Button Styles*/

@@ -7,7 +7,9 @@ get_header(); ?>
         <img src="http://margots.heatherlaude.com/wp-content/themes/margotstheme/images/covertext.png" class="covertext" />
         <div class="outer-shop-now">
             <div class="inner-shop-now">
-                <h3>Shop Now</h3>
+                <a href="http://margots.heatherlaude.com/products/" alt="link to buy our products">
+                    <h3>Shop Now</h3>
+                </a>
             </div>
         </div>
     </article>
@@ -24,7 +26,9 @@ get_header(); ?>
             <!-- END LOOP -->
             <div class="outer-sell-now">
                 <div class="inner-sell-now">
-                    <h3>Sell Our Pickles</h3>
+                    <a href="http://margots.heatherlaude.com/contact/" alt="link to sell pickles">
+                        <h3>Sell Our Pickles</h3>
+                    </a>
                 </div>
             </div>
             </div>
