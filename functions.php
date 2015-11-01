@@ -45,6 +45,7 @@ function blank_widgets_init() {
     }
 add_action('widgets_init', 'blank_widgets_init');
 
+
 /*-------------- Enable Menu---------------
 add_theme_support('menus');*/
 
@@ -52,7 +53,8 @@ function register_my_menus() {
   register_nav_menus(
     array(
       'main-menu1' => __( 'Main Menu Left' ),
-      'main-menu2' => __( 'Main Menu Right' )
+      'main-menu2' => __( 'Main Menu Right' ),
+      'mobile-menu' => __( 'Mobile Menu' )
     )
   );
 }

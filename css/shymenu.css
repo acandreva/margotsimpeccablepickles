@@ -1,0 +1,96 @@
+/*Shy Menu Plugin Styles*/
+* {
+    -moz-transition: all .4s cubic-bezier(.1,.7,.3,1);
+    -webkit-transition: all .4s cubic-bezier(.1,.7,.3,1);
+    -o-transition: all .4s cubic-bezier(.1,.7,.3,1);
+    -ms-transition: all .4s cubic-bezier(.1,.7,.3,1);
+    transition: all .4s cubic-bezier(.1,.7,.3,1);
+}
+
+.shy-menu ul {
+    list-style: none;
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.shy-menu {
+    display: block;
+    height: 35px;
+    padding: 5px;
+    width: 35px;
+    background-color: rgba(33,40,44,.1);
+    border-bottom-right-radius: 10px;
+    color: #fff;
+}
+
+.shy-menu.is-open, .shy-menu:hover {
+    background-color: rgba(33,40,44,1);
+}
+
+.shy-menu.is-open {
+    height: 200px;
+    width: 100px;
+}
+
+.shy-menu-panel {
+    margin-left: -100px;
+}
+
+.is-open .shy-menu-panel {
+    margin-left: 0;
+}
+
+.shy-menu-hamburger {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 54px;
+    height: 54px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.shy-menu-hamburger > .layer {
+    background-color: #fff;
+    border-radius: 1px;
+    display: block;
+    height: 2px;
+    overflow: hidden;
+    position: absolute;
+      left: 5px;
+    width: 18px;
+}
+
+.shy-menu-hamburger .layer.top { top: 9px; }
+
+.is-open .shy-menu-hamburger .layer.top {
+    top: 17px;
+    left: 5px;
+    transform: rotate(45deg);
+}<div class="shy-menu-panel">
+
+.shy-menu-hamburger .layer.mid { top: 16px; }
+
+.is-open .shy-menu-hamburger .layer.mid {
+    opacity: 0;
+    left: 0;
+}
+
+.shy-menu-hamburger .layer.btm { top: 23px; }
+
+.is-open .shy-menu-hamburger .layer.btm {
+    top: 17px;
+    left: 5px;
+    transform: rotate(-45deg);
+}
+
+.shy-menu a, .shy-menu a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.shy-menu a:hover, .shy-menu a:active {
+    color: #167f3c;
+    text-decoration: underline;
+}

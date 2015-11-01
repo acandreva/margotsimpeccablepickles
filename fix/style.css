@@ -10,7 +10,6 @@ Text Domain: margotstheme
 
 @import url("css/skeleton.css");
 @import url("css/normalize.css");
-@import url("css/shymenu.css");
 
 @font-face{
     font-family: 'sinkinsansregular';
@@ -31,8 +30,6 @@ Text Domain: margotstheme
 }
 
 .clear {clear: both;}
-
-.hide {display: none;}
 
 body {
     font-family: sinkinsansregular, Calibri, Trebuchet MS, sans-serif;
@@ -69,15 +66,6 @@ h6 {
     font-size: 1.1rem;
 }
 
-/*Home Page Headings*/
-.home_content h1, .about_content h1 {
-    width: 100%;
-    clear: both;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 40px 0;
-}
-
 /*Recipe Heading Styles*/
 .recipecontent h4, .recipecontent h4 a, .recipecontent h4 a:hover {
     color: #167f3c;
@@ -102,7 +90,6 @@ h6 {
 
 p {
     padding: 0 3% 0 3%;
-    line-height: 19px;
 }
 
 ::selection {
@@ -118,9 +105,6 @@ a img.alignright {float:right; margin:0 0 1em 1em}
 a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {margin: 1.5em auto}
 
-.page_content, .about_content {
-    padding-top: 15%;
-}
 
 /*--- Menu --- */
 .desktop-nav {display: none;}
@@ -128,27 +112,27 @@ a img.aligncenter {margin: 1.5em auto}
 .nav_bg_color {
     background-color: #167f3c;
     height: 50px;
-    margin-top: -138px;
+    margin-top: -81px;
 }
 
 .main_menu_lft {
     text-align: right;
-    margin-top: 104px;
+    margin-top: 55px;
 }
 
 .nav_logo {
-    margin-left: 0;
-    text-align: right;
+    margin-top: 25px;
 }
 
-.menu_rt {
-    margin-left: 0;
+.nav-logo img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main_menu_rt {
     text-align: left;
-    margin-top: 104px;
-    margin-left: 0;
+    margin-top: 55px;
 }
 
 .main_menu_lft ul, .main_menu_rt ul {
@@ -172,49 +156,14 @@ a img.aligncenter {margin: 1.5em auto}
 }
 
 .main_menu_lft ul li a:hover, .main_menu_rt ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline;  
 }
 
-/*--- Home Page ---*/
+/*--- Home Page --- */
 .home_photo {
     text-align: center;
-    width: 100%;
-    padding: 13% 0 5%;
 }
 
-.home_images {
-    text-align: center;
-}
-
-.home_images img {
-    margin: 0 5px;
-}
-
-.covertext {
-    margin: 10% 0;
-    width: 70%;
-    max-width: 500px;
-}
-
-/*--- Home Page Green Box Styles ---*/
-.home_text {
-    width: 90%;
-    margin-bottom: 10%;
-    padding: 3% 0 0 7%;
-    background-color: #83c8a4;
-    background-size: 100% 100%;
-    border: 1px solid #83c8a4;
-    -moz-clip-path: polygon(6% 50%, 0% 0%, 40% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%);
-    -webkit-clip-path: polygon(6% 50%, 0% 0%, 40% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%);
-    clip-path: polygon(6% 50%, 0% 0%, 40% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%);
-}
-
-.home_text p {
-    color: #fff;
-    width: 90%;
-}
-
-/*---Home Page Green Button Styles---*/
 .outer-shop-now {
     width: 160px;
     height: 45px;
@@ -233,12 +182,75 @@ a img.aligncenter {margin: 1.5em auto}
     height: 35px;
 }
 
-.inner-shop-now h3, .inner-sell-now h3 {
+.inner-shop-now h1 {
     font-family: "sinkinsansregular";
     color: white;
     font-size: 16px;
     text-align: center;
-    text-transform: uppercase;
+}
+
+h1.main-headings {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.home_text {
+    background-image: url("images/hometextbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 960px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home_text p {
+    color: #fff;
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-right: 90px;
+    margin: auto;
+}
+
+.home_images {
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
+.home_images img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.covertext {
+    margin: 10% 0;
+    width: 70%;
+    max-width: 500px;
+}
+
+.slideshow_button span {
+    display: none;
+}
+
+.retail-partners {
+    width: 100%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.retail-partners img {
+    float: left;
+    padding: 20px;
 }
 
 .outer-sell-now {
@@ -260,28 +272,16 @@ a img.aligncenter {margin: 1.5em auto}
     height: 35px;
 }
 
-/*End Button Styles*/
-.slideshow_button span {
-    display: none;
+.inner-sell-now h1 {
+    font-family: "sinkinsansregular";
+    color: white;
+    font-size: 16px;
+    text-align: center;
 }
-
-.retail-partners {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto 35px;
-    padding-top: 25px 25px 0;
-}
-
-.retail-partners img {
-    float: left;
-    padding: 20px;
-}
-
-/*--- Recipes Page ---*/
+/*---Recipes Page*/
 .recipecontent {
     width: 45%;
-    margin: auto ;
-    padding-top: 15%;
+    margin: auto;
 }
 
 .recipe-posts {
@@ -338,13 +338,7 @@ footer p {
 
 /*~~~~~~NEW MEDIA QUERY~~~~~~~*/
 @media screen and (min-width: 416px) {
-.desktop-nav {
-        display: block;
-        position: fixed;
-        z-index: 100;
-        width: 100%;
-}
-
+.desktop-nav {display: block;}
 .mobile-nav {display: none;}
 
 }

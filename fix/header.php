@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="http://margots.heatherlaude.com/wp-content/themes/margotstheme/js/main.js"></script>
-    <script type="text/javascript" src="http://margots.heatherlaude.com/wp-content/themes/margotstheme/js/shymenu.js"></script>
 
     <!-- Typekit -->
     <script src="https://use.typekit.net/kxt8yad.js"></script>
@@ -14,6 +13,7 @@
 
 </head>
 <body>
+    <article class="main-photo">
 <!--Mobile Nav-->
         <div class="shy-menu mobile-nav">
             <a class="shy-menu-hamburger">
@@ -41,18 +41,18 @@
     <header class="desktop-nav">
         <div class="container">
             <div class="row">
-                <div class="four columns">
+                <div class="five columns">
                     <?php wp_nav_menu( array(
                         'theme_location' => 'main-menu1',
                         'container_class' => 'main_menu_lft'
                     )); ?>
                 </div>
-                <div class="four columns nav_logo">
+                <div class="two columns nav_logo">
                     <a href="http://margots.heatherlaude.com/" atl="margot's homepage">
                         <img src="http://margots.heatherlaude.com/wp-content/themes/margotstheme/images/margotslogo.png" />
                     </a>
                 </div>
-                <div class="four columns menu_rt">
+                <div class="five columns">
                     <?php wp_nav_menu( array(
                         'theme_location' => 'main-menu2',
                         'container_class' => 'main_menu_rt'
