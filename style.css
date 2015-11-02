@@ -10,6 +10,7 @@ Text Domain: margotstheme
 
 @import url("css/skeleton.css");
 @import url("css/normalize.css");
+@import url("css/jquery.fatNav.css");
 
 @font-face{
     font-family: 'sinkinsansregular';
@@ -24,12 +25,13 @@ Text Domain: margotstheme
 }
 
 * {
-    color: #000000;
     font-size: 14px;
     line-height: 16px;
 }
 
 .clear {clear: both;}
+
+.hide, #sticky-social-wrap {display: none;}
 
 body {
     font-family: sinkinsansregular, Calibri, Trebuchet MS, sans-serif;
@@ -47,7 +49,11 @@ h1 {
 }
 
 h2 {
-    font-size: 2.6rem;
+    font-family: museo-slab;
+    font-weight: 800;
+    font-size: 3.0rem;
+    text-align: center;
+    margin-top: 20px;
 }
 
 h3 {
@@ -66,8 +72,40 @@ h6 {
     font-size: 1.1rem;
 }
 
+/*Home Page Headings*/
+.home_content h2, .about_content h2 {
+    width: 100%;
+    clear: both;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/*Recipe Heading Styles*/
+.recipecontent h4, .recipecontent h4 a, .recipecontent h4 a:hover {
+    color: #167f3c;
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 0px;
+}
+
+.recipecontent h3, .recipecontent h3 a, .recipecontent h3 a:hover {
+    font-family: museo-slab;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    font-size: 2.5rem;
+    line-height: 32px;
+    padding: 0px;
+}
+
+.recipecontent h3 a:hover {
+    text-decoration: underline;
+}
+
 p {
     padding: 0 3% 0 3%;
+    line-height: 19px;
 }
 
 ::selection {
@@ -83,20 +121,48 @@ a img.alignright {float:right; margin:0 0 1em 1em}
 a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {margin: 1.5em auto}
 
+.page_content, .about_content {
+    padding-top: 35%;
+}
+
 /*--- Menu --- */
+.desktop-nav {display: none;}
+
+.nav_bg_color {
+    background-color: #167f3c;
+    height: 50px;
+    margin-top: -138px;
+}
 
 .main_menu_lft {
     text-align: right;
-    margin-top: 70px;
+    margin-top: 104px;
 }
 
 .nav_logo {
-    margin-top: 5px;
+    margin-left: 0;
+    text-align: right;
+}
+
+.mobile_logo {
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+}
+
+.mobile_logo img {
+    width: 50%;
+}
+
+.menu_rt {
+    margin-left: 0;
 }
 
 .main_menu_rt {
     text-align: left;
-    margin-top: 70px;
+    margin-top: 104px;
+    margin-left: 0;
 }
 
 .main_menu_lft ul, .main_menu_rt ul {
@@ -114,11 +180,394 @@ a img.aligncenter {margin: 1.5em auto}
     text-decoration: none;  
     margin: 4px;
     padding: 5px 0px; 
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.5rem;
-    color: #06273e;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: museo-slab;
 }
 
 .main_menu_lft ul li a:hover, .main_menu_rt ul li a:hover {
-    color: #649AA6;
+    text-decoration: underline;
+}
+
+/*--- Home Page ---*/
+.home_photo {
+    text-align: center;
+    width: 100%;
+    padding: 40% 0 15%;
+}
+
+.home_images {
+    text-align: center;
+}
+
+.home_images img {
+    margin: 0 5px;
+}
+
+.covertext {
+    margin: 10% 0;
+    width: 70%;
+    max-width: 500px;
+}
+
+
+/*--- Home Page Green Box Styles ---*/
+.home_text {
+    width: 90%;
+    margin-bottom: 10%;
+    padding: 3% 0 0 7%;
+    background-color: #83c8a4;
+    background-size: 100% 100%;
+    border: 1px solid #83c8a4;
+    -moz-clip-path: polygon(6% 50%, 0% 0%, 40% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(6% 50%, 0% 0%, 40% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%);
+    clip-path: polygon(6% 50%, 0% 0%, 40% 0%, 100% 0%, 95% 50%, 100% 100%, 0% 100%);
+}
+
+.home_text p {
+    color: #fff;
+    width: 90%;
+}
+
+/*---Home Page Green Button Styles---*/
+.outer-shop-now {
+    width: 220px;
+    margin: auto;
+}
+
+.outer-shop-now, .outer-sell-now {
+    height: 65px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    background: #167F3C;
+    font-size: 16px;
+    color: #fff;
+}
+
+.outer-sell-now {
+    width: 280px;
+    margin: 10% auto;
+}
+
+.outer-shop-now:hover, .outer-sell-now:hover {
+    background: #fff;
+}
+
+.inner-shop-now, .inner-sell-now {
+    height: 30%;
+    width: 90%;
+    margin: auto;
+    border: 2px dashed #fff;
+    padding: 10px 0 20px;
+}
+
+.inner-shop-now:hover, .inner-sell-now:hover {
+    border: 2px dashed #167F3C;
+}
+
+.inner-shop-now a, .inner-sell-now a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.inner-shop-now a:hover, .inner-sell-now a:hover  {
+    color: #167F3C;
+}
+
+/*End Button Styles*/
+.slideshow_button span {
+    display: none;
+}
+
+.retail-partners {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto 35px;
+    padding-top: 25px 25px 0;
+}
+
+.retail-partners img {
+    float: left;
+    padding: 20px;
+}
+
+/*--- Find Us Page ---*/
+
+.findus_content {
+    margin-top: 5%;
+}
+
+.findus_content h2 {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+
+.wpsl-store-location a, .wpsl-info-window a, .wpsl-directions {
+    color: #167F3C;
+}
+
+.wpsl-store-location a:hover, .wpsl-info-window a:hover, .wpsl-directions:hover {
+    text-decoration: none;
+}
+
+.findus-sell-now {
+    margin: auto;
+    width: 280px;
+    height: 65px;
+    background: #167F3C;
+    margin: 40px auto;
+    color: #fff;
+    text-decoration: none;
+    border: 2px dashed #fff;
+    -webkit-box-shadow: 0 0 0 8px #167F3C;
+    -moz-box-shadow: 0 0 0 8px #167F3C;
+    box-shadow: 0 0 0 8px #167F3C;
+}
+
+.findus-sell-now:hover {
+    background: #ffffff;
+    border: 2px dashed #167F3C;
+    -webkit-box-shadow: 0 0 0 8px #ffffff;
+    -moz-box-shadow: 0 0 0 8px #ffffff;
+    box-shadow: 0 0 0 8px #ffffff;
+    color: #167F3C;
+}
+
+.findus-sell-now-link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.findus-sell-now-link .findus-sell-now h3 {
+    text-transform: uppercase;
+        margin-top: 15px;
+}
+
+/*--- Recipes Page ---*/
+.recipecontent {
+    width: 45%;
+    margin: auto ;
+    padding-top: 15%;
+}
+
+.recipe-posts {
+    margin: 10% 0 0;
+    border-bottom: solid #000 1px;
+}
+
+.metainfo {
+    padding: 6.5px 0;
+    color: #757575;
+    font-style: oblique;
+    float: left;
+}
+
+.metainfo a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.metainfo a:hover {
+    color: #6e9329;
+    text-decoration: underline;
+}
+
+.meta-glyph {
+    margin: 0 5px;
+}
+
+.social-shortcode {
+    display: inline;
+}
+
+.recipe-posts ul {
+    list-style-type: none; 
+    list-style-image: none; 
+}
+
+.next_prev {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*--- Contact Page ---*/
+
+.contact_content {
+    margin-top: 5%;
+}
+
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+    max-width: 242px;
+}
+
+#form-submit {
+    width: 100px;
+    background: #167F3C;
+    margin: 10px 0 10px 10px;
+    padding: 0;
+    color: #fff;
+    font-family: museo-slab;
+    font-size: 1.25em;
+    border-radius: 0px;
+    border: 2px dashed #fff;
+    -webkit-box-shadow: 0 0 0 8px #167F3C;
+    -moz-box-shadow: 0 0 0 8px #167F3C;
+    box-shadow: 0 0 0 8px #167F3C;
+}
+
+#form-submit:hover  {
+    background: #ffffff;
+    border: 2px dashed #167F3C;
+    -webkit-box-shadow: 0 0 0 8px #ffffff;
+    -moz-box-shadow: 0 0 0 8px #ffffff;
+    box-shadow: 0 0 0 8px #ffffff;
+    color: #167F3C;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: none;
+    padding: 10px;
+    background: #83c8a4;
+    color: #167F3C;
+    width: 75%;
+    margin-left: 10px;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.contact-info a {
+    color: #167F3C;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/*--- Footer --- */
+footer {
+    text-align: center;
+    background-color: #a9aaac;
+    padding: 15px 0;
+}
+
+footer p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+/*~~~~~~NEW MEDIA QUERY~~~~~~~*/
+@media screen and (min-width: 415px) {
+    .desktop-nav {
+            display: block;
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+    }
+
+    .mobile-nav, .hamburger, .hamburger__icon, .hamburger__icon:before, .hamburger__icon:after {display: none;}
+
+    #sticky-social-wrap {display: block;}
+
+    .page_content, .about_content {
+        padding-top: 15%;
+    }
+
+    /*--- Home Page ---*/
+    .home_photo {
+        padding: 13% 0 5%;
+    }
+
+    /*--- Contact Page ---*/
+    input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"],     input[type="password"], textarea, select {
+        max-width: 385px;
+}
+
+
+}
+
+/*~~~~~~NEW MEDIA QUERY~~~~~~~*/
+@media screen and (min-width: 1021px) {
+/*--- Contact Page ---*/
+
+.wpcf7-form-control-wrap {
+    float: left;
+    margin: 0 10px 10px 10px;
+}
+
+input[type="text"] {
+    width: 191px;
+}
+
+#address, input[type="tel"] {
+    width: 275px;
+}
+
+#email {
+    width: 313px;
+}
+
+#state, #zip {
+    width: 104px;
+}
+
+#interested {
+    width: 440px;
+    max-width: none;
+}
+
+#message {
+    width: 736px;
+    margin-bottom: 10px;
+    max-width: none;
+}
+
+input#form-submit {
+    clear: both;
+    float: none;
+    display: block;
+    margin-left: 19px;
+}
+
+div.wpcf7-mail-sent-ok {
+    width: 75%;
+    margin-left: 35px;
+}
+
+}
+/*~~~~~~NEW MEDIA QUERY~~~~~~~*/
+@media screen and (min-width: 1150px) {
+    /*Home Page Green Box Style - Firefox */
+    @-moz-document url-prefix() {
+        .home_text {
+            background-color: transparent;
+        padding: 0;
+        height: 0;
+        width: auto; 
+        border-left: 80.25px solid transparent; 
+        border-right: 80.25px solid transparent; 
+        border-bottom: 180.25px solid #83c8a4;
+        border-top: 180.25px solid #83c8a4;
+        margin-bottom: 10%;
+        }
+
+        .home_text p:first-child {
+        margin-top: -15%;
+        }
+    }
+  
+}
+
+/*~~~~~~NEW MEDIA QUERY~~~~~~~*/
+@media screen and (min-width: 1280px) {
+    form.wpcf7-form {
+        margin-left: 100px;
+    }
 }
